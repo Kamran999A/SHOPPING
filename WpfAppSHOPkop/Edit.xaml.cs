@@ -43,85 +43,7 @@ namespace WpfAppSHOPkop
             
         }
 
-        //private void Window_Closed(object sender, EventArgs e)
-        //{
-        //    e.Cancel = true;
-        //    this.Visibility = Visibility.Hidden;
-        //}
-
-
-        //protected void OnPropertyChanged([CallerMemberName] string name = null)
-        //{
-        //    PropertyChangedEventHandler handler = PropertyChanged;
-        //    if (handler != null)
-        //    {
-        //        handler(this, new PropertyChangedEventArgs(name));
-        //    }
-        //}
-        //private Car infoCar;
-
-        //public Car InfoCar
-        //{
-        //    get { return infoCar; }
-        //    set { infoCar = value; OnPropertyChanged(); }
-        //}
-
-
-
-        //private void UIElement_OnMouseUp(object sender, MouseButtonEventArgs e)
-        //{
-        //    var open = new OpenFileDialog();
-
-        //    open.Multiselect = false;
-        //    open.Filter = "Image file (*.png)|*.png";
-
-        //    if (open.ShowDialog() != true)
-        //        return;
-
-        //    var image = new BitmapImage(new Uri(open.FileName));
-
-        //    var fileName = $@"Images/{Guid.NewGuid()}.png";
-
-        //    if (!Directory.Exists("Images"))
-        //        Directory.CreateDirectory("Images");
-
-        //    image.Save(fileName);
-
-        //    var fullFileName = Directory.GetCurrentDirectory() + "\\" + fileName;
-
-        //    ImageProduct.Source = new BitmapImage(new Uri(fullFileName));
-        //}
-        //private void ButtonUpdate_OnClick(object sender, RoutedEventArgs e)
-        //{   
-
-        //    if (_selectedProduct == null)
-        //        return;
-
-        //    if (ImageProduct.Source != null)
-        //        _selectedProduct.ImagePath = ImageProduct.Source.ToString();
-
-        //    _selectedProduct.Name = TextBoxProductName.Text;
-        //    _selectedProduct.Price = Convert.ToDouble(TextBoxProductPrice.Text);
-        //    _selectedProduct.Quantity = Convert.ToInt32(TextBoxProductQuantity.Text);
-
-        //    RefreshListBox(Products);
-        //}
-        //private void RefreshListBox(List<Product> products)
-        //{
-
-        //    //ListBoxProducts.ItemsSource = null;
-        //    //ListBoxProducts.ItemsSource = products;
-        //}
-        //private void ButtonDelete_OnClick(object sender, RoutedEventArgs e)
-        //{
-        //    if (_selectedProduct == null)
-        //        return;
-
-        //   prod.Remove(_selectedProduct);
-        //    Products.Remove(_selectedProduct);
-
-        //    RefreshListBox(Products);
-        //}
+       
 
         string m = "";
         private void ProductImage_Drop(object sender, DragEventArgs e)
@@ -288,10 +210,5 @@ namespace WpfAppSHOPkop
                 e.Effects = DragDropEffects.All;
             }
         }
-
-    
-
-      
-
     }
 }
